@@ -1,26 +1,99 @@
 <template>
 <body>
     <nav>
-   <a @click= "scrollToSection('section1')">Sec1</a>
-   <a @click= "scrollToSection('section2')">Sec2</a>
-   <a @click= "scrollToSection('section3')">Sec3</a>
-   <a @click= "scrollToSection('section4')">Sec4</a>
- </nav>
-        <section  id="section1">
-
+        <div class="info">
+            <p class="nav-head">Akanimoh Obot</p>
+            <p class="email">oakanimoh@gmail.com</p>
+            <p class="contact">07012508259</p>
+        </div>
+        <div class="link">
+            <a @click= "scrollToSection('section1')">About Me</a>
+            <a @click= "scrollToSection('section2')">Skills</a>
+            <a @click= "scrollToSection('section3')">Projects</a>
+            <a @click= "scrollToSection('section4')">Recommendations</a>
+        </div>
+     </nav>
+     <div class="container">
+         <section  id="section1">
+            <img src="../assets/IMG_20220913_013835.jpg" alt="" srcset="">
+            <div class="write-up">
+                <h1>
+                Hi, I'm Akanimoh Obot!
+                </h1>
+                <p class="write">
+                    As a dedicated junior developer with a strong 
+                    foundation in computer engineering and proficiency
+                    in HTML, CSS, JavaScript, Vue.js, and Node.js, 
+                    I am seeking an opportunity to contribute to 
+                    dynamic projects and continue learning in a
+                    collaborative software development environment.
+                </p>
+            </div>
+            
         </section>
         <section id="section2">
+            <h2>Skills</h2>
+            <div class="all-boxes">
+                <div class="box">
+
+                </div>
+                <div class="box">
+
+                </div>
+                <div class="box">
+
+                </div>
+                <div class="box">
+
+                </div>
+                <div class="box">
+
+                </div>
+                <div class="box">
+
+                </div>
+                <div class="box">
+
+                </div>
+            </div>
+        </section>
+        <section id="section3">
+            <h2>Projects</h2>
+            <div class="all-project">
+                <div class="project">
+                    <div class="project-head">
+                        Newsletter Project
+                    </div>
+                    <li>
+                        Implemented user authentication and CRUD functionality for blog posts
+                    </li>
+                </div>
+                <hr>
+                 <div class="project">
+                    <div class="project-head">
+                        Space-web Project
+                    </div>
+                    <li>
+                      Utilized Vue.js to build dynamic components, enabling real-time updates
+                    </li>
+                </div>
+                <hr>
+                 <div class="project">
+                    <div class="project-head">
+                        Dojo-Blog
+                    </div>
+                    <li>
+                        Developed a blogging platform using Vue.js 
+                    </li>
+                </div>
+            </div>
+        </section>
+        <section id="section4">
+            <h2>Recommendations</h2>
 
         </section>
-        <section id="section3" class="section3">
-
-        </section>
-        <section id="section4" class="section4">
-
-        </section>
-        <section id="section5" class="section5">
-
-        </section>
+     </div>
+        
 </body>
 
 </template>
@@ -41,6 +114,8 @@ import VueScrollTo from 'vue-scrollto';
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    align-items:  center;
+    justify-content:  center;
 }
 
 html,body{
@@ -49,38 +124,136 @@ html,body{
     height: 100%;
     width: 100%;
     background-color: aqua;
-    /* scroll-behavior: smooth;
-    scroll-padding: 10rem; */
+    scroll-behavior: smooth;
+    scroll-padding: 8rem; 
+    align-items: center;
+    justify-content: center;
 }
 nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem 0rem 1rem;
     top: 0;
     position: sticky;
-    background-color: green;
+    background-color: rgb(38, 36, 182);
+    color: white;
+}
+.info{
+    padding: 1rem 1rem 1rem 1rem;
+}
+.link{
+    background-color: red;
+    margin: 0.5rem;
+}
+.link a{
+    margin: 1rem 1rem 1rem 3rem;
 }
 .container{
+        justify-content: center;
+        align-items: center;
         background-color: orange;
         width: 100%;
         height: 100%;
         margin-top: 0;
+        
 }
     #section1{
-        height: 720px;
-        width: 40rem;
+        display: flex;
+        height: 680px;
+        width: 100%;
         background-color: red;
     }
+    #section1 >img{
+        height: 35rem;
+        width: 30rem;
+        margin: 3rem 1rem 1rem 4rem;
+    }
+    #section1 .write-up{
+        background-color: white;
+        margin: 8rem 1rem 1rem 1rem;
+        width: 48rem;
+        height: 20rem;
+    }
+    #section1 h1{
+        font-size: 3rem;
+        font-weight: 500;
+        margin: 3rem 0rem 2rem 0rem;
+    }
+     #section1 .write{
+         padding-right:1rem ;
+     }
+
     #section2{
-        height: 720px;
-        width: 40rem;
+        height: 650px;
+        width: 100%;
+        background-color: orange;
+    }
+     h2{
+        color: purple;
+        font-size: 2rem;
+        margin-left: 2.5rem;
+    }
+    .all-boxes{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        height: 600px;
+        width: 100%;
+        background-color: rgb(137, 94, 14);
+    }
+    .box{
+        height:12rem;
+        width: 14rem;
+        background-color: aqua;
+        margin: 1rem 2rem 2rem 1rem;
+    }
+
+    #section3{
+        height: 650px;
+        width: 100%;
+        background-color: rgb(227, 186, 227);
+        align-items: center center;
+        justify-content: center center;
+        text-align: center ;
+    }
+     #section3 h2{
+         text-align: left;
+     }
+     #section3 .all-project{
+         display: inline-block;
+        background-color: white;
+         margin: 0;
+        padding: 0;
+        height: 36rem;
+        width: 80rem;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .project{
+        display: inline-block;
+        height: 7rem;
+        width: 70rem;
+        text-align: left;
+        margin: 2rem;
         background-color: blue;
     }
-    .section3{
-        height: 109rem;
-        width: 40rem;
-        background-color: purple;
+    .project .project-head{
+        font-weight: bold;
+        margin: 1rem;
     }
-    .section4{
-        height: 720px;
-        width: 40rem;
-        background-color: red;
+    .project li{
+        margin-left: 2rem;
+    }
+     hr{
+         display: inline-block;
+         text-align: center;
+         margin:1rem 2rem 1rem 1rem ;
+         height: 0.2px;
+         width: 70%;
+    }
+    #section4{
+        height: 680px;
+        width: 100%;
+        background-color: lawngreen;
     }
 </style>
