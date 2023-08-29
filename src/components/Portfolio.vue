@@ -90,7 +90,53 @@
         </section>
         <section id="section4">
             <h2>Recommendations</h2>
-
+                <div class="hold-top">
+                    <div class="holders">
+                        <p class="holders-p">
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing 
+                        elit. Optio dolorem repellendus hic magni fuga molestiae 
+                        iste aut deleniti eum sit. Dolorum, corrupti perspiciatis 
+                        dolorem incidunt totam aliquid repellendus a maiores 
+                        mollitia fugiat. Placeat consectetur quisquam delectus 
+                        praesentium dicta hic nostrum fugiat nemo voluptas, 
+                        omnis ea accusantium eveniet, est architecto quis."
+                        </p> 
+                    </div>
+                    <div class="holders">
+                        <p class="holders-p">
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing 
+                        elit. Optio dolorem repellendus hic magni fuga molestiae 
+                        iste aut deleniti eum sit. Dolorum, corrupti perspiciatis 
+                        dolorem incidunt totam aliquid repellendus a maiores 
+                        mollitia fugiat. Placeat consectetur quisquam delectus 
+                        praesentium dicta hic nostrum fugiat nemo voluptas, 
+                        omnis ea accusantium eveniet, est architecto quis."
+                        </p> 
+                    </div>
+                    <div class="holders">
+                        <p class="holders-p">
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing 
+                        elit. Optio dolorem repellendus hic magni fuga molestiae 
+                        iste aut deleniti eum sit. Dolorum, corrupti perspiciatis 
+                        dolorem incidunt totam aliquid repellendus a maiores 
+                        mollitia fugiat. Placeat consectetur quisquam delectus 
+                        praesentium dicta hic nostrum fugiat nemo voluptas, 
+                        omnis ea accusantium eveniet, est architecto quis."
+                        </p>  
+                    </div>
+                </div>
+                <div class="hold-bottom">
+                    <form action="">
+                 
+                                 <span>Leave a Recommendation</span><br>
+                            
+                                <input type="text" placeholder="Name (Optional)" class="name">
+                                <textarea name="" id="" cols="30" rows="10" class="message" placeholder="Message"></textarea>
+                            
+                             <button type="submit">Submit</button>
+                    </form>
+                </div>
+           
         </section>
      </div>
         
@@ -149,9 +195,10 @@ nav{
     margin: 1rem 1rem 1rem 3rem;
 }
 .container{
+        display: inline-block;
         justify-content: center;
         align-items: center;
-        background-color: orange;
+        background-color: green;
         width: 100%;
         height: 100%;
         margin-top: 0;
@@ -159,13 +206,13 @@ nav{
 }
     #section1{
         display: flex;
-        height: 680px;
+        height: 580px;
         width: 100%;
         background-color: red;
     }
     #section1 >img{
-        height: 35rem;
-        width: 30rem;
+        height: 28rem;
+        width: 28rem;
         margin: 3rem 1rem 1rem 4rem;
     }
     #section1 .write-up{
@@ -184,7 +231,7 @@ nav{
      }
 
     #section2{
-        height: 650px;
+        height:580px;
         width: 100%;
         background-color: orange;
     }
@@ -205,10 +252,12 @@ nav{
         width: 14rem;
         background-color: aqua;
         margin: 1rem 2rem 2rem 1rem;
+         box-shadow: 1px 1px 1px 0 rgba(154, 160, 185, 0.05),
+         1px 1px 15px rgba(0 ,0, 0, 0.3);
     }
 
     #section3{
-        height: 650px;
+        height: 580px;
         width: 100%;
         background-color: rgb(227, 186, 227);
         align-items: center center;
@@ -223,7 +272,7 @@ nav{
         background-color: white;
          margin: 0;
         padding: 0;
-        height: 36rem;
+        height: 33rem;
         width: 80rem;
         align-items: center;
         justify-content: center;
@@ -231,10 +280,10 @@ nav{
     }
     .project{
         display: inline-block;
-        height: 7rem;
+        height: 6rem;
         width: 70rem;
         text-align: left;
-        margin: 2rem;
+        margin: 1.5rem;
         background-color: blue;
     }
     .project .project-head{
@@ -251,9 +300,83 @@ nav{
          height: 0.2px;
          width: 70%;
     }
-    #section4{
-        height: 680px;
-        width: 100%;
-        background-color: lawngreen;
-    }
+#section4{
+    height: 880px;
+    width: 100%;
+    background-color: lawngreen;
+}
+
+.hold-top{
+    display: flex;
+    height: 20rem;
+    background-color: aquamarine;
+}
+.holders{
+    padding: 0;
+    display: flex;
+    width: 25rem;
+    height: 12rem;
+    background-color: lightgrey;
+    border-radius: 20px 20px;
+    border: 2px solid rgba(60, 55, 55, 0.422);
+    margin: 0rem 1rem 4rem 1rem;
+}
+.holders-p{
+    font-family: cursive;
+    font-style: italic;
+    line-height: 20px;
+}
+
+.hold-bottom{
+    background-color: lightslategray;
+    display: inline-block;
+    height: 34rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+form{
+     display: inline-block;
+    background-color: yellow;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 49rem;
+}
+
+ span{
+     margin: 1rem;
+     font-size: 30px;
+
+}
+.name{
+     margin: 1rem;
+     width: 46rem;
+}
+.message{
+    padding: 0;
+     margin: 1rem;
+     width: 46rem;
+     height: 12rem;
+} 
+.message::placeholder{
+    font-size: 16px;
+}
+button{
+     display: flex;
+     margin: auto;
+      width: 11rem;
+     height: 3.5rem;
+     margin-top: 4rem;
+     border: 2px solid purple;
+     font-size: 18px;
+    font-weight: bold;
+    color: purple;
+     border-radius:6px ;
+}
+button:hover{
+    background-color: rgb(218, 57, 218);
+    color: beige;
+}
 </style>
